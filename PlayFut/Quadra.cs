@@ -10,7 +10,6 @@ namespace PlayFut
     {
         public int id { get; set; }
         public string nome { get; set; }
-        public DateTime nascimento { get; set; }
         public string imagem { get; set; }
         public string imagem_secundaria { get; set; }
         public string imagem_terceira { get; set; }
