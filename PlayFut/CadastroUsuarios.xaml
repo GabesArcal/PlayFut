@@ -4,9 +4,25 @@
              x:Class="PlayFut.CadastroUsuarios"
              Title="CadastroUsuarios">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+
+        <Label Text="Digite o nome"/>
+        <Entry x:Name="EntryNome"/>
+        
+        <Label Text="Digite o email"/>
+        <Entry x:Name="EntryEmail"/>
+
+        <Label Text="Digite o cpf"/>
+        <Entry x:Name="EntryCpf"/>
+
+        <Label Text="Digite a senha"/>
+        <Entry x:Name="EntrySenha"/>
+
+        <Label Text="Digite o nascimento"/>
+        <DatePicker x:Name="EntryNascimento" MinimumDate="01/01/1901"
+            MaximumDate="12/31/2025"
+            Date="06/21/2022" />
+
+        <Button Text="Salvar" Clicked="Salvar_Clicked"/>
+
     </VerticalStackLayout>
 </ContentPage>
