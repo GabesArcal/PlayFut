@@ -2,41 +2,58 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PlayFut.ListagemUsuarios"
-             Title="ListagemUsuarios">
-    <ScrollView>
+             Title="Listagem de Usuários">
 
-        <VerticalStackLayout>
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout Padding="10" Spacing="10">
+                <ListView x:Name="Lista"
+                          HasUnevenRows="True"
+                          SeparatorVisibility="None"
+                          BackgroundColor="White">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame Margin="5"
+                                       Padding="10"
+                                       CornerRadius="12"
+                                       BackgroundColor="#F7F7F7"
+                                       HasShadow="True">
+                                    <VerticalStackLayout Spacing="4">
+                                        <Label Text="{Binding nome}"
+                                               FontAttributes="Bold"
+                                               FontSize="18"
+                                               TextColor="#2C3E50" />
+                                        <Label Text="{Binding email}"
+                                               FontSize="14"
+                                               TextColor="#7F8C8D" />
+                                        <Grid ColumnSpacing="8" RowSpacing="4">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
 
-            <ListView x:Name="Lista">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid Padding="10">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="Auto" />
-                                </Grid.ColumnDefinitions>
+                                            <Label Text="Nascimento:" Grid.Row="0" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="{Binding nascimento}" Grid.Row="0" Grid.Column="1" TextColor="#333"/>
 
-                                <Label Text="{Binding id}" Grid.Row="0" Grid.Column="0"/>
-                                <Label Text="{Binding nome}" Grid.Row="0" Grid.Column="1"/>
-                                <Label Text="{Binding nascimento}" Grid.Row="0" Grid.Column="2"/>
-                                <Label Text="{Binding email}" Grid.Row="0" Grid.Column="3"/>
-                                <Label Text="{Binding cpf}" Grid.Row="0" Grid.Column="4"/>
-                                <Label Text="{Binding criado_em}" Grid.Row="0" Grid.Column="5"/>
+                                            <Label Text="CPF:" Grid.Row="1" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="{Binding cpf}" Grid.Row="1" Grid.Column="1" TextColor="#333"/>
 
-                            </Grid>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-
-        </VerticalStackLayout>
-    </ScrollView>
+                                            <Label Text="Criado em:" Grid.Row="2" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="{Binding criado_em}" Grid.Row="2" Grid.Column="1" TextColor="#333"/>
+                                        </Grid>
+                                    </VerticalStackLayout>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>
