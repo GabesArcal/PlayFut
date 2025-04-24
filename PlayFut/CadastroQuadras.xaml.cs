@@ -6,4 +6,9 @@ public partial class CadastroQuadras : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void Salvar_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }

@@ -3,10 +3,92 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PlayFut.CadastroQuadras"
              Title="CadastroQuadras">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <VerticalStackLayout Spacing="10" Padding="15">
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+
+            <HorizontalStackLayout Spacing="10" Padding="15">
+
+                <Label Text="Nome da Quadra:" />
+                <Entry x:Name="EntryNome" WidthRequest="150"/>
+
+                <Label Text="Tipo da quadra:" />
+                <Entry x:Name="EntryTipo" WidthRequest="150"/>
+
+                <Label Text="Dimensões:" />
+                <Entry x:Name="EntryDimensoes" WidthRequest="150"/>
+
+            </HorizontalStackLayout>
+
+        </HorizontalStackLayout>
+
+        <BoxView HeightRequest="2" BackgroundColor="Black" WidthRequest="1000" />
+
+        <HorizontalStackLayout Spacing="10" Padding="15" HorizontalOptions="Center">
+
+            <Label Text="Iluminação:" />
+            <Entry x:Name="EntryIluminacao" WidthRequest="150"/>
+
+            <Label Text="Sintetico:" />
+            <Entry x:Name="EntrySintetico" WidthRequest="150"/>
+
+            <Label Text="Cobertura:" />
+            <Entry x:Name="EntryCobertura" WidthRequest="150"/>
+            
+        </HorizontalStackLayout>
+
+        <BoxView HeightRequest="2" BackgroundColor="Black" WidthRequest="1000" />
+
+        <HorizontalStackLayout Spacing="10" Padding="15" HorizontalOptions="Center">
+
+            <Label Text="Capacidade:" />
+            <Entry x:Name="EntryCapacidade" WidthRequest="150"/>
+
+            <Label Text="Estacionamento:" />
+            <Entry x:Name="EntryEstacionamento" WidthRequest="150"/>
+
+            <Label Text="Vestiario:" />
+            <Entry x:Name="EntryVestiario" WidthRequest="150"/>
+            
+        </HorizontalStackLayout>
+
+        <BoxView HeightRequest="2" BackgroundColor="Black" WidthRequest="1000" />
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+
+            <HorizontalStackLayout Spacing="10" Padding="15">
+
+                <Label Text="Imagem:" />
+                <Entry x:Name="EntryImagem" WidthRequest="150"/>
+
+                <Label Text="Arquibancada:" />
+                <Entry x:Name="EntryArquibancada" WidthRequest="150"/>
+
+                <Label Text="Wi-Fi" VerticalOptions="Center" />
+                <Switch x:Name="SwitchWifi" />
+
+            </HorizontalStackLayout>
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+
+            <HorizontalStackLayout Spacing="10" Padding="15">
+
+                <Label Text="Segunda Imagem:" />
+                <Entry x:Name="EntrySegunda" WidthRequest="150"/>
+
+                <Label Text="Terceira Imagem:" />
+                <Entry x:Name="EntryTerceira" WidthRequest="150"/>
+
+                <Label Text="Quarta Imagem:" />
+                <Entry x:Name="EntryQuarta" WidthRequest="150"/>
+
+            </HorizontalStackLayout>
+
+        </HorizontalStackLayout>
+
+        <Button Text="Salvar" Clicked="Salvar_Clicked"/>
+
     </VerticalStackLayout>
 </ContentPage>
