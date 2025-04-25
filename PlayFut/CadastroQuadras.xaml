@@ -9,11 +9,20 @@
 
             <HorizontalStackLayout Spacing="10" Padding="15">
 
-                <Label Text="Nome da Quadra:" />
-                <Entry x:Name="EntryNome" WidthRequest="150"/>
+                <Label Text="Selecione um tipo de quadra:" />
+                <Picker x:Name="PickerTipoQuadra" Title="Selecione um tipo">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Futsal</x:String>
+                            <x:String>Society</x:String>
+                            <x:String>Basquete</x:String>
+                            <x:String>Vôlei</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
 
-                <Label Text="Tipo da quadra:" />
-                <Entry x:Name="EntryTipo" WidthRequest="150"/>
+                <Label Text="Nome:" />
+                <Entry x:Name="EntryNome" WidthRequest="150"/>
 
                 <Label Text="Dimensões:" />
                 <Entry x:Name="EntryDimensoes" WidthRequest="150"/>
@@ -70,6 +79,8 @@
             </HorizontalStackLayout>
 
         </HorizontalStackLayout>
+
+        <BoxView HeightRequest="2" BackgroundColor="Black" WidthRequest="1000" />
 
         <HorizontalStackLayout HorizontalOptions="Center">
 
