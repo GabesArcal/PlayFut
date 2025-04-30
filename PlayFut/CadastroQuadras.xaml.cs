@@ -29,16 +29,27 @@ public partial class CadastroQuadras : ContentPage
         }
 
         Quadra u = new Quadra();
-        u.nome = EntryNome.Text;
-        u.imagem = EntryImagem.Text;
-        u.imagem_secundaria = EntrySegunda.Text;
-        u.imagem_terceira = EntryTerceira.Text;
-        u.imagem_quarta = EntryQuarta.Text;
-        u.tipo_quadra = PickerTipoQuadra.SelectedItem.ToString();
-        //u.preco = EntryPreco.Text
 
+        u.nome_local = EntryNome.Text;
+        u.imagem_principal = EntryImagem.Text;
+        u.imagem_1 = EntryPri.Text;
+        u.imagem_2 = EntrySeg.Text;
+        u.imagem_3 = EntryTer.Text;
+        u.preco = Decimal.Parse(EntryPreco.Text);
+        u.dimensoes = EntryDimensoes.Text;
+        u.iluminacao = EntryIluminacao.IsToggled;
+        u.vestiario = EntryVestiario.IsToggled;
+        u.bebedouro = EntryBebedouro.IsToggled;
+        u.estacionamento = EntryEstacionamento.IsToggled;
+        u.localizacao = EntryLocalizacao.Text;
+        u.arquibancada = EntryArquibancada.IsToggled;
+        u.coberta = EntryCoberta.IsToggled;
+        u.acessibilidade = SwitchAcessibilidade.IsToggled;
+        u.wifi = SwitchWifi.IsToggled;
+        u.tipo_quadra = PickerTipoQuadra.SelectedItem.ToString();
 
         u.Insere();
 
     }
 }
+        

@@ -21,11 +21,11 @@
                     </Picker.ItemsSource>
                 </Picker>
 
-                <Label Text="Nome:" />
+                <Label Text="Nome do Local:" />
                 <Entry x:Name="EntryNome" WidthRequest="150"/>
 
-                <Label Text="Dimensões:" />
-                <Entry x:Name="EntryDimensoes" WidthRequest="150"/>
+                <Label Text="Localizacao:" />
+                <Entry x:Name="EntryLocalizacao" WidthRequest="150"/>
 
             </HorizontalStackLayout>
 
@@ -36,29 +36,32 @@
         <HorizontalStackLayout Spacing="10" Padding="15" HorizontalOptions="Center">
 
             <Label Text="Iluminação:" />
-            <Entry x:Name="EntryIluminacao" WidthRequest="150"/>
+            <Switch x:Name="EntryIluminacao" WidthRequest="150"/>
 
-            <Label Text="Sintetico:" />
-            <Entry x:Name="EntrySintetico" WidthRequest="150"/>
+            <Label Text="Coberta:" />
+            <Switch x:Name="EntryCoberta" WidthRequest="150"/>
 
-            <Label Text="Cobertura:" />
-            <Entry x:Name="EntryCobertura" WidthRequest="150"/>
+            <Label Text="Acessibilidade:" />
+            <Switch x:Name="SwitchAcessibilidade" WidthRequest="150"/>
             
+            <Label Text="Dimensões:" />
+            <Entry x:Name="EntryDimensoes" WidthRequest="150"/>
+
         </HorizontalStackLayout>
 
         <BoxView HeightRequest="2" BackgroundColor="Black" WidthRequest="1000" />
 
         <HorizontalStackLayout Spacing="10" Padding="15" HorizontalOptions="Center">
 
-            <Label Text="Capacidade:" />
-            <Entry x:Name="EntryCapacidade" WidthRequest="150"/>
-
             <Label Text="Estacionamento:" />
-            <Entry x:Name="EntryEstacionamento" WidthRequest="150"/>
+            <Switch x:Name="EntryEstacionamento" WidthRequest="150"/>
 
             <Label Text="Vestiario:" />
-            <Entry x:Name="EntryVestiario" WidthRequest="150"/>
-            
+            <Switch x:Name="EntryVestiario" WidthRequest="150"/>
+
+            <Label Text="Bebedouro:" />
+            <Switch x:Name="EntryBebedouro" WidthRequest="150"/>
+
         </HorizontalStackLayout>
 
         <BoxView HeightRequest="2" BackgroundColor="Black" WidthRequest="1000" />
@@ -67,13 +70,16 @@
 
             <HorizontalStackLayout Spacing="10" Padding="15">
 
-                <Label Text="Imagem:" />
+                <Label Text="Imagem Principal:" />
                 <Entry x:Name="EntryImagem" WidthRequest="150"/>
 
-                <Label Text="Arquibancada:" />
-                <Entry x:Name="EntryArquibancada" WidthRequest="150"/>
+                <Label Text="Preco:" />
+                <Entry x:Name="EntryPreco" WidthRequest="150"/>
 
-                <Label Text="Wi-Fi" VerticalOptions="Center" />
+                <Label Text="Arquibancada:" />
+                <Switch x:Name="EntryArquibancada" WidthRequest="150"/>
+
+                <Label Text="WifiFi" VerticalOptions="Center" />
                 <Switch x:Name="SwitchWifi" />
 
             </HorizontalStackLayout>
@@ -86,14 +92,14 @@
 
             <HorizontalStackLayout Spacing="10" Padding="15">
 
-                <Label Text="Segunda Imagem:" />
-                <Entry x:Name="EntrySegunda" WidthRequest="150"/>
+                <Label Text="Imagem_1:" />
+                <Entry x:Name="EntryPri" WidthRequest="150"/>
 
-                <Label Text="Terceira Imagem:" />
-                <Entry x:Name="EntryTerceira" WidthRequest="150"/>
+                <Label Text="Imagem_2:" />
+                <Entry x:Name="EntrySeg" WidthRequest="150"/>
 
-                <Label Text="Quarta Imagem:" />
-                <Entry x:Name="EntryQuarta" WidthRequest="150"/>
+                <Label Text="Imagem_3:" />
+                <Entry x:Name="EntryTer" WidthRequest="150"/>
 
             </HorizontalStackLayout>
 

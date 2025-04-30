@@ -6,7 +6,7 @@ namespace PlayFut
 {
     class Conexao
     {
-        string dadosConexao = "server=localhost;user=meuusuario;password=asd123;database=playfut;port=3306;";
+        string dadosConexao = "server=localhost;user=root;password=;database=playfut;port=3306;";
 
 
         public int ExecutaComando(string query)
