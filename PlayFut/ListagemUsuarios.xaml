@@ -24,9 +24,11 @@
                                                FontAttributes="Bold"
                                                FontSize="18"
                                                TextColor="#2C3E50" />
+                                        
                                         <Label Text="{Binding email}"
                                                FontSize="14"
                                                TextColor="#7F8C8D" />
+                                        
                                         <Grid ColumnSpacing="8" RowSpacing="4">
                                             <Grid.RowDefinitions>
                                                 <RowDefinition Height="Auto"/>
