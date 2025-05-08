@@ -38,13 +38,13 @@
                 <Label Text="Imagem Principal:" />
                 <Entry x:Name="EntryImagem" WidthRequest="150"/>
 
-                <Label Text="Imagem_1:" />
+                <Label Text="Imagem_pri:" />
                 <Entry x:Name="EntryPri" WidthRequest="150"/>
 
-                <Label Text="Imagem_2:" />
+                <Label Text="Imagem_ser:" />
                 <Entry x:Name="EntrySeg" WidthRequest="150"/>
 
-                <Label Text="Imagem_3:" />
+                <Label Text="Imagem_ter:" />
                 <Entry x:Name="EntryTer" WidthRequest="150"/>
 
             </HorizontalStackLayout>
@@ -53,7 +53,10 @@
 
             <HorizontalStackLayout Spacing="10" Padding="15" HorizontalOptions="Center">
 
-                <Label Text="Estacionamento:" />
+                <Label Text="Telefone:" />
+                <Entry x:Name="EntryTelefone" WidthRequest="150"/>
+
+            <Label Text="Estacionamento:" />
                 <Switch x:Name="EntryEstacionamento" WidthRequest="150"/>
 
                 <Label Text="Vestiario:" />
@@ -70,7 +73,8 @@
 
                 <HorizontalStackLayout Spacing="10" Padding="15">
 
-                    
+                    <Label Text="Disponibilidade:" />
+                    <Entry x:Name="EntryDisponibilidade" WidthRequest="150"/>
 
                     <Label Text="Preco:" />
                     <Entry x:Name="EntryPreco" WidthRequest="150"/>

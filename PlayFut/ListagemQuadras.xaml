@@ -48,50 +48,54 @@
                                                 <ColumnDefinition Width="*"/>
                                             </Grid.ColumnDefinitions>
 
-                                            <Label Text="Nascimento:" Grid.Row="0" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="Tipo de quadra:" Grid.Row="0" Grid.Column="0" TextColor="#999"/>
                                             <Label Text="{Binding tipo_quadra}" Grid.Row="0" Grid.Column="1" TextColor="#333"/>
 
-                                            <Label Text="CPF:" Grid.Row="1" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="Localição:" Grid.Row="0" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="{Binding localizacao}" Grid.Row="0" Grid.Column="1" TextColor="#333"/>
+
+                                            <Label Text="Preço:" Grid.Row="1" Grid.Column="0" TextColor="#999"/>
                                             <Label Text="{Binding preco}" Grid.Row="1" Grid.Column="1" TextColor="#333"/>
 
-                                            <Label Text="CPF:" Grid.Row="2" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="Dimensões:" Grid.Row="2" Grid.Column="0" TextColor="#999"/>
                                             <Label Text="{Binding dimensoes}" Grid.Row="2" Grid.Column="1" TextColor="#333"/>
 
-                                            <Label Text="Criado em:" Grid.Row="3" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="Iluminação:" Grid.Row="3" Grid.Column="0" TextColor="#999"/>
                                             <Label Text="{Binding iluminação}" Grid.Row="3" Grid.Column="1" TextColor="#333"/>
 
-                                            <Label Text="Nascimento:" Grid.Row="4" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="Vestiario:" Grid.Row="4" Grid.Column="0" TextColor="#999"/>
                                             <Label Text="{Binding vestiario}" Grid.Row="4" Grid.Column="1" TextColor="#333"/>
 
-                                            <Label Text="CPF:" Grid.Row="5" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="Bebedouro:" Grid.Row="5" Grid.Column="0" TextColor="#999"/>
                                             <Label Text="{Binding bebedouro}" Grid.Row="5" Grid.Column="1" TextColor="#333"/>
 
-                                            <Label Text="CPF:" Grid.Row="6" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="Estacionamento:" Grid.Row="6" Grid.Column="0" TextColor="#999"/>
                                             <Label Text="{Binding estacionamento}" Grid.Row="6" Grid.Column="1" TextColor="#333"/>
 
-                                            <Label Text="Criado em:" Grid.Row="7" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="Arquibancada:" Grid.Row="7" Grid.Column="0" TextColor="#999"/>
                                             <Label Text="{Binding arquibancada}" Grid.Row="7" Grid.Column="1" TextColor="#333"/>
 
-                                            <Label Text="CPF:" Grid.Row="8" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="Cobertura:" Grid.Row="8" Grid.Column="0" TextColor="#999"/>
                                             <Label Text="{Binding coberta}" Grid.Row="8" Grid.Column="1" TextColor="#333"/>
 
-                                            <Label Text="Criado em:" Grid.Row="9" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="Acessibilidade:" Grid.Row="9" Grid.Column="0" TextColor="#999"/>
                                             <Label Text="{Binding acessibilidade}" Grid.Row="9" Grid.Column="1" TextColor="#333"/>
 
-                                            <Label Text="Criado em:" Grid.Row="10" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="Wi_fi:" Grid.Row="10" Grid.Column="0" TextColor="#999"/>
                                             <Label Text="{Binding wifi}" Grid.Row="10" Grid.Column="1" TextColor="#333"/>
 
-                                            <Label Text="CPF:" Grid.Row="11" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="Imagem principal:" Grid.Row="11" Grid.Column="0" TextColor="#999"/>
                                             <Label Text="{Binding imagem_principal}" Grid.Row="11" Grid.Column="1" TextColor="#333"/>
 
-                                            <Label Text="Criado em:" Grid.Row="12" Grid.Column="0" TextColor="#999"/>
-                                            <Label Text="{Binding imagem_1}" Grid.Row="12" Grid.Column="1" TextColor="#333"/>
+                                            <Label Text="Imagem primeira:" Grid.Row="12" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="{Binding imagem_pri}" Grid.Row="12" Grid.Column="1" TextColor="#333"/>
 
-                                            <Label Text="Criado em:" Grid.Row="13" Grid.Column="0" TextColor="#999"/>
-                                            <Label Text="{Binding imagem_2}" Grid.Row="13" Grid.Column="1" TextColor="#333"/>
+                                            <Label Text="Imagem segunda:" Grid.Row="13" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="{Binding imagem_seg}" Grid.Row="13" Grid.Column="1" TextColor="#333"/>
 
-                                            <Label Text="Criado em:" Grid.Row="14" Grid.Column="0" TextColor="#999"/>
-                                            <Label Text="{Binding imagem_3}" Grid.Row="14" Grid.Column="1" TextColor="#333"/>
+                                            <Label Text="Imagem terceira:" Grid.Row="14" Grid.Column="0" TextColor="#999"/>
+                                            <Label Text="{Binding imagem_ter}" Grid.Row="14" Grid.Column="1" TextColor="#333"/>
+
 
                                         </Grid>
                                     </VerticalStackLayout>
