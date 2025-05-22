@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace PlayFut;
 
-namespace PlayFut
+public class Locacao
 {
-    internal class Locacao
-    {
-        public int id { get; set; }
-        public int id_quadra { get; set; }
-        public int id_usuario { get; set; }
-        public string data { get; set; }
-        public required string hora { get; set; }
-    }
+    public int id { get; set; }
+    public int id_usuario { get; set; }
+    public int id_quadra { get; set; }
+    public string data { get; set; }
+    public string hora { get; set; }
+
+    public string DataHora => $"{data} {hora}";
 }
+

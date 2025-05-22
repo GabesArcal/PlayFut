@@ -71,12 +71,9 @@
 
             <HorizontalStackLayout HorizontalOptions="Center">
 
-                <HorizontalStackLayout Spacing="10" Padding="15">
+            <HorizontalStackLayout Spacing="10" Padding="15">
 
-                    <Label Text="Disponibilidade:" />
-                    <Entry x:Name="EntryDisponibilidade" WidthRequest="150"/>
-
-                    <Label Text="Preco:" />
+                <Label Text="Preco:" />
                     <Entry x:Name="EntryPreco" WidthRequest="150"/>
 
                     <Label Text="Arquibancada:" />

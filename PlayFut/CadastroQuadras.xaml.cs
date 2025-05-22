@@ -9,7 +9,7 @@ public partial class CadastroQuadras : ContentPage
         PickerTipoQuadra.ItemsSource = new List<string>
     {
         "Futsal",
-        "Society",
+        "Tênis",
         "Basquete",
         "Vôlei"
     };
@@ -38,7 +38,6 @@ public partial class CadastroQuadras : ContentPage
         u.imagem_seg = EntrySeg.Text;
         u.imagem_ter = EntryTer.Text;
         u.telefone = EntryTelefone.Text;
-        u.disponibilidade = EntryDisponibilidade.Text;
         u.preco = Decimal.Parse(EntryPreco.Text);
         u.dimensoes = EntryDimensoes.Text;
         u.iluminacao = EntryIluminacao.IsToggled;

@@ -19,7 +19,6 @@ namespace PlayFut
         public string imagem_seg { get; set; }
         public string imagem_ter { get; set; }
         public string telefone { get; set; }
-        public string disponibilidade { get; set; }
         public decimal preco { get; set; }
         public string dimensoes { get; set; }
         public bool iluminacao { get; set; }
@@ -40,7 +39,7 @@ namespace PlayFut
 
         public void Insere()
         {
-            string query = $"INSERT INTO quadras (nome_local, tipo_quadra, localizacao, imagem_principal, imagem_pri, imagem_seg, imagem_ter, telefone, disponibilidade, preco, dimensoes, iluminacao, vestiario, bebedouro, estacionamento, arquibancada, coberta,  acessibilidade, wifi) VALUES ('{nome_local}', '{tipo_quadra}', '{imagem_principal}', '{imagem_pri}', '{imagem_seg}', '{imagem_ter}', '{telefone}', '{disponibilidade}' {preco}, '{dimensoes}', '{iluminacao}', {vestiario}, {bebedouro}, {estacionamento}, {arquibancada}, {coberta}, {acessibilidade}, {wifi});";
+            string query = $"INSERT INTO quadras (nome_local, tipo_quadra, localizacao, imagem_principal, imagem_pri, imagem_seg, imagem_ter, telefone, preco, dimensoes, iluminacao, vestiario, bebedouro, estacionamento, arquibancada, coberta,  acessibilidade, wifi) VALUES ('{nome_local}', '{tipo_quadra}', '{imagem_principal}', '{imagem_pri}', '{imagem_seg}', '{imagem_ter}', '{telefone}', {preco}, '{dimensoes}', '{iluminacao}', {vestiario}, {bebedouro}, {estacionamento}, {arquibancada}, {coberta}, {acessibilidade}, {wifi});";
             conexao.ExecutaComando(query);
             Console.WriteLine("Quadra inserida com sucesso!");
         }
@@ -64,7 +63,6 @@ namespace PlayFut
                 q.imagem_seg = linha["imagem_seg"].ToString();
                 q.imagem_ter = linha["imagem_ter"].ToString();
                 q.telefone = linha["telefone"].ToString();
-                q.disponibilidade = linha["disponibilidade"].ToString();
                 q.preco = Convert.ToDecimal(linha["preco"]);
                 q.dimensoes = linha["dimensoes"].ToString();
                 q.iluminacao = Convert.ToBoolean(linha["iluminacao"]);
@@ -74,7 +72,7 @@ namespace PlayFut
                 q.arquibancada = Convert.ToBoolean(linha["arquibancada"]);
                 q.coberta = Convert.ToBoolean(linha["coberta"]);
                 q.acessibilidade = Convert.ToBoolean(linha["acessibilidade"]);
-                q.wifi = Convert.ToBoolean(linha["wifi"]);
+                q.wifi = Convert.ToBoolean(linha["wi_fi"]);
 
                 lista.Add(q);
             }

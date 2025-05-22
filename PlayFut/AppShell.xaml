@@ -38,13 +38,8 @@
 
         <ShellContent
             Title="Listagem"
-            ContentTemplate="{DataTemplate local:ListagemLocacao}"
-            Route="ListagemLocacao" />
-
-        <ShellContent
-            Title="Cadastro"
-            ContentTemplate="{DataTemplate local:CadastroLocacao}"
-            Route="CadastroLocacao" />
+            ContentTemplate="{DataTemplate local:ListaLocacoes}"
+            Route="ListaLocacoes" />
 
     </FlyoutItem>
 
