@@ -7,7 +7,7 @@ namespace PlayFut
     class Conexao
     {
         // Corrigido: charset adicionado para suporte a acentuação e símbolos especiais
-        private readonly string dadosConexao = "server=localhost;user=root;password=;database=playfut_final;port=3306;charset=utf8mb4;";
+        private readonly string dadosConexao = "server=10.60.44.58;user=root;password=senac123;database=playfut_final;port=3306;charset=utf8mb4;";
 
         public int ExecutaComando(string query)
         {
