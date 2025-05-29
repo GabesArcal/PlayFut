@@ -33,10 +33,10 @@ public partial class CadastroQuadras : ContentPage
         u.nome_local = EntryNome.Text;
         u.tipo_quadra = PickerTipoQuadra.SelectedItem.ToString();
         u.localizacao = EntryLocalizacao.Text;
-        u.imagem_principal = EntryImagem.Text;
-        u.imagem_pri = EntryPri.Text;
-        u.imagem_seg = EntrySeg.Text;
-        u.imagem_ter = EntryTer.Text;
+        u.imagem_principal = EntryImagem.Text.Replace("'", "''");
+        u.imagem_pri = EntryPri.Text.Replace("'", "''");
+        u.imagem_seg = EntrySeg.Text.Replace("'", "''");
+        u.imagem_ter = EntryTer.Text.Replace("'", "''");
         u.telefone = EntryTelefone.Text;
         u.preco = Decimal.Parse(EntryPreco.Text);
         u.dimensoes = EntryDimensoes.Text;

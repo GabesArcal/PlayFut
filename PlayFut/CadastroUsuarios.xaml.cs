@@ -14,8 +14,9 @@ public partial class CadastroUsuarios : ContentPage
 
 		Usuario u = new Usuario();
 		u.nome = EntryNome.Text;
-		u.cpf = EntryCpf.Text;
-		u.email = EntryEmail.Text;
+		u.telefone = EntryTelefone.Text;
+        u.email = EntryEmail.Text;
+        u.cpf = EntryCpf.Text;
 		u.senha = EntrySenha.Text;
 		u.nascimento = EntryNascimento.Date;
 		

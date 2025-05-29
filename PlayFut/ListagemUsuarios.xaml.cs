@@ -2,10 +2,10 @@ namespace PlayFut;
 
 public partial class ListagemUsuarios : ContentPage
 {
-	public ListagemUsuarios()
-	{
-		InitializeComponent();
-	}
+    public ListagemUsuarios()
+    {
+        InitializeComponent();
+    }
 
     protected override void OnAppearing()
     {
@@ -15,5 +15,4 @@ public partial class ListagemUsuarios : ContentPage
         Lista.ItemsSource = null;
         Lista.ItemsSource = usuario.BuscaTodos();
     }
-
 }

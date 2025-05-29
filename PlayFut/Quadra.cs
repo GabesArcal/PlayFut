@@ -39,7 +39,18 @@ namespace PlayFut
 
         public void Insere()
         {
-            string query = $"INSERT INTO quadras (nome_local, tipo_quadra, localizacao, imagem_principal, imagem_pri, imagem_seg, imagem_ter, telefone, preco, dimensoes, iluminacao, vestiario, bebedouro, estacionamento, arquibancada, coberta,  acessibilidade, wifi) VALUES ('{nome_local}', '{tipo_quadra}', '{imagem_principal}', '{imagem_pri}', '{imagem_seg}', '{imagem_ter}', '{telefone}', {preco}, '{dimensoes}', '{iluminacao}', {vestiario}, {bebedouro}, {estacionamento}, {arquibancada}, {coberta}, {acessibilidade}, {wifi});";
+            string query = $"""
+                INSERT INTO quadras
+                (
+                    nome_local, tipo_quadra, localizacao, imagem_principal, imagem_pri, imagem_seg, imagem_ter, telefone, preco, dimensoes, 
+                    iluminacao, vestiario, bebedouro, estacionamento, arquibancada, coberta,  acessibilidade, wifi
+                )
+                VALUES
+                (
+                    '{nome_local}', '{tipo_quadra}', '{localizacao}', "{imagem_principal}", "{imagem_pri}", "{imagem_seg}", "{imagem_ter}", '{telefone}', {preco}, '{dimensoes}',
+                    '{iluminacao}', {vestiario}, {bebedouro}, {estacionamento}, {arquibancada}, {coberta}, {acessibilidade}, {wifi}
+                );
+                """;
             conexao.ExecutaComando(query);
             Console.WriteLine("Quadra inserida com sucesso!");
         }

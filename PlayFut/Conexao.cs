@@ -49,7 +49,7 @@ namespace PlayFut
             {
                 throw new Exception("Erro ao executar SELECT no banco de dados: " + ex.Message, ex);
             }
-
+                
             return dt;
         }
     }
