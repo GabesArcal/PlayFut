@@ -79,7 +79,7 @@
                     <Label Text="Arquibancada:" />
                     <Switch x:Name="EntryArquibancada" WidthRequest="150"/>
 
-                    <Label Text="WifiFi" VerticalOptions="Center" />
+                    <Label Text="Wifi" VerticalOptions="Center" />
                     <Switch x:Name="SwitchWifi" />
 
                 </HorizontalStackLayout>

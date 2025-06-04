@@ -12,11 +12,6 @@
             Title="Usuarios"
             ContentTemplate="{DataTemplate local:ListagemUsuarios}"
             Route="ListagemUsuarios" />
-
-        <ShellContent
-            Title="Cadastro"
-            ContentTemplate="{DataTemplate local:CadastroUsuarios}"
-            Route="CadastroUsuarios" />
         
     </FlyoutItem>
 

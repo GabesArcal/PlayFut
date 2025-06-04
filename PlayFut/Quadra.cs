@@ -83,7 +83,7 @@ namespace PlayFut
                 q.arquibancada = Convert.ToBoolean(linha["arquibancada"]);
                 q.coberta = Convert.ToBoolean(linha["coberta"]);
                 q.acessibilidade = Convert.ToBoolean(linha["acessibilidade"]);
-                q.wifi = Convert.ToBoolean(linha["wi_fi"]);
+                q.wifi = Convert.ToBoolean(linha["wifi"]);
 
                 lista.Add(q);
             }
